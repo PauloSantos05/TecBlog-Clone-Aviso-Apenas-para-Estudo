@@ -1,0 +1,141 @@
+:root{
+
+    /* Paleta de Cores */
+
+    --background-body: rgb(228, 228, 228);
+    --header-background: rgb(247, 196, 57);
+    --logo-color1: rgb(102, 102, 102);
+    --logo-color2: #fff;
+    --postagens-color: rgb(194, 194, 194);
+    --color-title: rgb(255, 208, 0);
+    --color-primary: #ffffff;
+    --color-secondary: rgb(102, 102, 102);
+    --color-terciary: var(--header-background);
+    --color-terciary-hover: rgb(241, 179, 7);
+    --color-click: rgb(255, 115, 0);
+    --color-rodape: rgb(197, 197, 197);
+    --color-rodape-font: rgb(0, 0, 0);
+}
+
+body{
+    background-color: var(--background-body);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px 3%;
+    background-color: var(--header-background);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+#logo{
+    /* border: 1px solid blue; */
+    width: fit-content;
+    font-weight: 900;
+    color: var(--logo-color2);
+}
+
+#logo-secondary{
+    color: var(--color-secondary);
+}
+
+#logo a{
+    text-decoration: none;
+    color: var(--logo-color2);
+
+}
+
+.container-links{
+    /* border: 1px solid blue; */
+    color: var(--color-primary);
+    top: 0;
+    right: -50%;
+}
+
+.container-links a{
+    /* border: 1px solid blue; */
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: .2s;
+}
+
+.container-links a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-terciary);
+}
+
+section{
+    /* border: 1px solid blue; */
+    /* background-color: var(--color-primary); */
+    width: 920px;
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.area-principal{
+    /* border: 1px solid blue; */
+    background-color: var(--color-primary);
+
+    margin: 8px;
+    padding: 8px;
+    width: 670px;
+}
+
+.titulo-principal{
+    color: var(--color-title);
+}
+
+.postagens{
+    display: inline;
+}
+
+.caixa-de-postagens{
+    /* border: 1px solid blue; */
+    background-color: var(--color-primary);
+
+    margin: 8px;
+    padding: 8px;
+    width: 250px;
+}
+
+.titulo-postagens{
+    /* border: 1px solid green; */
+    background-color: var(--postagens-color);
+    color: var(--color-primary);
+    font-weight: 700;
+    align-items: center;
+    margin: 0 0 8px 0;
+    padding: 5px;
+}
+
+.links{
+    color: var(--color-terciary);
+    text-decoration: none;
+}
+
+.links:hover{
+    color: var(--color-terciary-hover);
+}
+
+.links:active{
+    color: var(--color-click);
+}
+
+.rodape{
+    background-color: var(--color-rodape);
+    /* border: 1px solid blue; */
+    margin: 8px 0 0 0;
+    padding: 1px;
+    color: var(--color-rodape-font);
+    font-weight: bold;
+}
